@@ -24,26 +24,6 @@
     <span></span>
     <span></span>
   </div>
+  <iframe style="display: none" src="https://www.youtube.com/watch?v=HYA7-azZv7M&ab_channel=RteeOfficial" allow="autoplay"></iframe>
 </body>
-<script>
-  $(document).ready(function () {
-    var audio = new Audio();
-    audio.src = 'music.mp3';
-    // when the sound has been loaded, execute your code
-    audio.oncanplaythrough = (event) => {
-      var playedPromise = audio.play();
-      if (playedPromise) {
-        playedPromise.catch((e) => {
-          console.log(e)
-          if (e.name === 'NotAllowedError' || e.name === 'NotSupportedError') {
-            console.log(e.name);
-          }
-        }).then(() => {
-          console.log("playing sound !!!");
-        });
-      }
-    }
-  });
-</script>
-
 </html>
