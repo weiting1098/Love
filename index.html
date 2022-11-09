@@ -24,15 +24,26 @@
     <span></span>
     <span></span>
   </div>
-  <audio autoplay id="music">
-    <source src="music.mp3" type="audio/mp3">
-  </audio>
 </body>
 <script>
   $(document).ready(function () {
-    setTimeout(() => {
-      $('#music').get(0).play();
-    }, 5);
+    var audio = new Audio();
+    audio.src = 'music.mp3';
+    // when the sound has been loaded, execute your code
+    audio.oncanplaythrough = (event) => {
+      var playedPromise = audio.play();
+      if (playedPromise) {
+        playedPromise.catch((e) => {
+          console.log(e)
+          if (e.name === 'NotAllowedError' || e.name === 'NotSupportedError') {
+            console.log(e.name);
+          }
+        }).then(() => {
+          console.log("playing sound !!!");
+        });
+      }
+    }
   });
 </script>
+
 </html>
