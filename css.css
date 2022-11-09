@@ -129,6 +129,8 @@ html {
    bottom: 270px;
    left: 80px;
   }
+
+  audio { display:none;}
   
   
   /* ANIMATIONS */
