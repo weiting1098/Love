@@ -24,6 +24,17 @@
     <span></span>
     <span></span>
   </div>
-  <iframe style="display: none" src="https://www.youtube.com/watch?v=HYA7-azZv7M&ab_channel=RteeOfficial" allow="autoplay"></iframe>
+  <audio controls autoplay id="music">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
 </body>
+<script>
+  $(document).ready(function () {
+    $('body').click(function () {
+      var audio = document.getElementById("music");
+      audio.play();
+    });
+  });
+</script>
+
 </html>
