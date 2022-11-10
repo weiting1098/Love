@@ -15,9 +15,10 @@
 </body>
 <script>
     $(document).ready(function () {
-        //random number generator 1-4
-        var randomNum = Math.floor(Math.random() * 4) + 1;
-        switch (randomNum) {
+        //random number generator 1-5
+        var random = Math.floor(Math.random() * 5) + 1;
+
+        switch (random) {
             case 1:
                 window.location.href = "love1/index.html";
                 break;
@@ -29,6 +30,9 @@
                 break;
             case 4:
                 window.location.href = "love4/index.html";
+                break;
+            case 5:
+                window.location.href = "love5/index.html";
                 break;
         }
     })
