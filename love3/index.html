@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+
+<body style="height: 100vh;">
+    <div class="floor"></div>
+    <!-- thank you: https://woot.co.uk/ for the GIF -->
+    <img src="https://i.imgur.com/pXALzSc.gif" class="woot-dance" width="328" height="272"
+        alt="8-bit dancing Karateka guy">
+</body>
+<footer>
+    <audio id="music" loop="loop" src="music.mp3"></audio>
+    <script>
+        $(document).ready(function () {
+            $('body').click(function () {
+                var audio = document.getElementById("music");
+                audio.play();
+            });
+        });
+    </script>
+</footer>
+
+</html>

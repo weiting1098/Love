@@ -2,39 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Love You</title>
-  <link rel="stylesheet" href="./css.css">
-  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <main class="devices">
-    <h1><span class="iu">I</span> <span class="love">Love</span> <span class="heart">❤</span> <span
-        class="yo">Yo</span><span class="iu">u</span></h1>
 
-  </main>
-  <div class="congrats">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <audio controls autoplay id="music">
-    <source src="music.mp3" type="audio/mpeg">
-  </audio>
 </body>
 <script>
-  $(document).ready(function () {
-    $('body').click(function () {
-      var audio = document.getElementById("music");
-      audio.play();
-    });
-  });
+    $(document).ready(function () {
+        //random number generator 1-4
+        var randomNum = Math.floor(Math.random() * 4) + 1;
+        switch (randomNum) {
+            case 1:
+                window.location.href = "love1/index.html";
+                break;
+            case 2:
+                window.location.href = "love2/index.html";
+                break;
+            case 3:
+                window.location.href = "love3/index.html";
+                break;
+            case 4:
+                window.location.href = "love4/index.html";
+                break;
+        }
+    })
 </script>
 
 </html>

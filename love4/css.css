@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(to top, #be93c5, #7bc6cc);
+  height: 100vh;
+  overflow: hidden;
+}
+.svg {
+  display: none;
+  z-index: 1;
+}
+.control {
+  display: block;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  width: 40px;
+}
+.dance {
+  animation: sprite-animation 1.45s steps(11, end) infinite;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/160607/veronicadance-pink.svg') no-repeat;
+  height: 550px;
+  margin: 20px auto;
+  position: relative;
+  width: 550px;
+  z-index: 2;
+}
+@keyframes sprite-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6041px 0;
+  }
+}
