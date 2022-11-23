@@ -1074,7 +1074,7 @@
    <div class="christmas" >
     <div class="message">
         <h1>Merry Christmas!</h1>
-        <h2>From CyberSoft with LOVE♥</h2>
+        <h2>From Quang with LOVE♥</h2>
     </div>
     <div class="window ">
         <div class="santa">
@@ -1103,8 +1103,13 @@
             document.querySelector("#btn").style.display='none';
             document.querySelector(".christmas").style.display='block';
             document.querySelector("#body").style.background="#de2f32";
+            var audio = document.querySelector("#music");
+            audio.play();
         }
    </script>
 </body>
+<footer>
+    <audio id="music" loop="loop" src="music.mp3"></audio>
+</footer>
 
 </html>
